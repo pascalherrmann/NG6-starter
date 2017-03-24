@@ -1,13 +1,14 @@
 import angular from 'angular';
-import uiRouter from 'angular-ui-router';
 import portfolioDetailViewComponent from './portfolioDetailView.component';
 
+import RatingComment from './ratingComment/ratingComment';
+
 let portfolioDetailViewModule = angular.module('portfolioDetailView', [
-  uiRouter
+  RatingComment
 ])
 
-.component('portfolioDetailView', portfolioDetailViewComponent)
+  .component('portfolioDetailView', portfolioDetailViewComponent)
 
-.name;
+  .name;
 
 export default portfolioDetailViewModule;

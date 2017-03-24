@@ -1,0 +1,16 @@
+<div class="rating-comments row debug-border">
+  <div class="col-md-2"></div>
+  <div class="rating-comment col-md-8">
+    <div class="rating-comment-header">
+      <h3>{{$ctrl.userName}}</h3>
+      <span ng-repeat="i in [1,2,3,4,5]"
+            ng-class="i <= $ctrl.score ? 'glyphicon-star' : 'glyphicon-star-empty'"
+            class="rating-star glyphicon"
+            aria-hidden="true"></span>
+    </div>
+    <div class="rating-comment-text">
+      {{$ctrl.ratingText}}
+    </div>
+  </div>
+  <div class="col-md-2"></div>
+</div>
