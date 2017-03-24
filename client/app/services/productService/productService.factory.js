@@ -1,18 +1,9 @@
-// this.productType = 'unfall';
-// this.productName = 'Spinnenverschluck-Police';
-// this.productDescription = 'Zahlt zuverlässig bei versehntlich verschluckten Spinnen';
-// this.productFeatures = [
-//   'Zahlt bei Kreuzspinnen',
-//   'Zahlt bei Schwarzen Wittwen',
-//   'Zahlt bei Weberknechten'
-// ];
-
 const product = (type, name, description, features) => {
   return {
-    'type': type,
-    'name': name,
-    'description': description,
-    'features': features
+    type: type,
+    name: name,
+    description: description,
+    features: features
   }
 };
 
@@ -36,7 +27,9 @@ const getProducts = () => {
 };
 
 const ProductService = () => {
-  getProducts
+  return {
+    getProducts
+  }
 };
 
 export default ProductService;

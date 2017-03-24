@@ -1,12 +1,13 @@
 import angular from 'angular';
 import uiRouter from 'angular-ui-router';
-import portfolioOverviewComponent from './portfolioOverview.component';
+
+import PortfolioOverview from './portfolioOverview.component';
 
 let portfolioOverviewModule = angular.module('portfolioOverview', [
-  uiRouter
+  uiRouter, 'productService'
 ])
 
-.component('portfolioOverview', portfolioOverviewComponent)
+.component('portfolioOverview', PortfolioOverview)
 
 .name;
 
