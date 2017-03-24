@@ -1,0 +1,24 @@
+.product {
+  li {
+    display: block;
+    margin-top: 8pt;
+  }
+  li:before {
+    content: '\e013 ';
+    font-family: 'Glyphicons Halflings';
+  }
+}
+
+.product-header {
+  display: block;
+  margin: 10px 0;
+  .glyphicon {
+    font-size: 28pt;
+    vertical-align: middle;
+    padding-right: 8px;
+  }
+  h1 {
+    display: inline;
+    vertical-align: middle;
+  }
+}
