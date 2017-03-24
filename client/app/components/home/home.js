@@ -2,8 +2,11 @@ import angular from 'angular';
 import uiRouter from 'angular-ui-router';
 import homeComponent from './home.component';
 
+import portfolioDetailView from './portfolioDetailView/portfolioDetailView';
+
 let homeModule = angular.module('home', [
-  uiRouter
+  uiRouter,
+  portfolioDetailView
 ])
 
 .config(($stateProvider, $urlRouterProvider) => {
@@ -19,7 +22,7 @@ let homeModule = angular.module('home', [
 })
 
 .component('home', homeComponent)
-  
+
 .name;
 
 export default homeModule;

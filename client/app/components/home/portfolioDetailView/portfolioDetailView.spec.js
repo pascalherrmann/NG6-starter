@@ -3,7 +3,7 @@ import PortfolioDetailViewController from './portfolioDetailView.controller';
 import PortfolioDetailViewComponent from './portfolioDetailView.component';
 import PortfolioDetailViewTemplate from './portfolioDetailView.html';
 
-describe('PortfolioDetailView', () => {
+describe('portfolioDetailView', () => {
   let $rootScope, makeController;
 
   beforeEach(window.module(PortfolioDetailViewModule));
