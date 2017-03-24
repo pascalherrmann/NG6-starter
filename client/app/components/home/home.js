@@ -18,6 +18,10 @@ let homeModule = angular.module('home', [
     .state('home', {
       url: '/',
       component: 'home'
+    })
+    .state('product', {
+      url: '/product',
+      component: 'portfolioDetailView'
     });
 })
 

@@ -1,37 +1,39 @@
-<div class="row">
-  <div class="col-md-2"></div>
-  <div class="col-md-8">
-    <product-detail></product-detail>
-  </div>
-  <div class="col-md-2"></div>
-</div>
-<div class="rating-view .debug-border">
+<div class="home">
   <div class="row">
-    <div class="col-md-3"></div>
-    <div class="rating-total col-md-2">
-      <div class="rating-total-header">{{$ctrl.totalScore()}}</div>
-      <div class="rating-total-stars">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+      <product-detail></product-detail>
+    </div>
+    <div class="col-md-2"></div>
+  </div>
+  <div class="rating-view .debug-border">
+    <div class="row">
+      <div class="col-md-3"></div>
+      <div class="rating-total col-md-2">
+        <div class="rating-total-header">{{$ctrl.totalScore()}}</div>
+        <div class="rating-total-stars">
     <span ng-repeat="i in [1,2,3,4,5]"
           ng-class="i <= $ctrl.totalScore() ? 'glyphicon-star' : 'glyphicon-star-empty'"
           class="rating-star glyphicon"
           aria-hidden="true"></span>
+        </div>
+        <div class="rating-count-total">
+          <span class="glyphicon glyphicon-user"></span> {{$ctrl.totalVotes()}} Gesamt
+        </div>
       </div>
-      <div class="rating-count-total">
-        <span class="glyphicon glyphicon-user"></span> {{$ctrl.totalVotes()}} Gesamt
-      </div>
-    </div>
-    <div class="rating-count-list col-md-4">
-      <div class="rating-count-line" ng-repeat="i in [1,2,3,4,5]">
-        {{i}} <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-        <span class="rating-count" ng-class="{'rating-count-bar': $ctrl.votes[i-1] > 0}" ng-style="{width: $ctrl.barWidth(i) + '%'}">
+      <div class="rating-count-list col-md-4">
+        <div class="rating-count-line" ng-repeat="i in [1,2,3,4,5]">
+          {{i}} <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+          <span class="rating-count" ng-class="{'rating-count-bar': $ctrl.votes[i-1] > 0}" ng-style="{width: $ctrl.barWidth(i) + '%'}">
         {{$ctrl.votes[(i-1)]}}
       </span>
+        </div>
       </div>
+      <div class="col-md-3"></div>
     </div>
-    <div class="col-md-3"></div>
   </div>
+  <rating-comment></rating-comment>
+  <rating-comment></rating-comment>
+  <rating-comment></rating-comment>
+  <rating-comment></rating-comment>
 </div>
-<rating-comment></rating-comment>
-<rating-comment></rating-comment>
-<rating-comment></rating-comment>
-<rating-comment></rating-comment>
