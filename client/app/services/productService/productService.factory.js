@@ -1,3 +1,12 @@
+// this.productType = 'unfall';
+// this.productName = 'Spinnenverschluck-Police';
+// this.productDescription = 'Zahlt zuverlässig bei versehntlich verschluckten Spinnen';
+// this.productFeatures = [
+//   'Zahlt bei Kreuzspinnen',
+//   'Zahlt bei Schwarzen Wittwen',
+//   'Zahlt bei Weberknechten'
+// ];
+
 const product = (type, name, description, features) => {
   return {
     'type': type,
@@ -26,18 +35,8 @@ const getProducts = () => {
   ];
 };
 
-const iconMapping = {
-  'unfall': 'glyphicon-certificate'
+const ProductService = () => {
+  getProducts
 };
 
-class ProductDetailController {
-  constructor() {
-    this.products = getProducts();
-    this.productIcon = (product) => {
-      let icon = iconMapping[product.type]
-      return icon ? icon : 'glyphicon-ok-sign';
-    };
-  }
-}
-
-export default ProductDetailController;
+export default ProductService;

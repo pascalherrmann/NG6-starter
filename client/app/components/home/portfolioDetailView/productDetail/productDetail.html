@@ -1,12 +1,12 @@
-<div class="product">
+<div ng-repeat="product in $ctrl.products" class="product">
   <div class="product-header">
-    <span class="glyphicon" ng-class="$ctrl.productIcon()"></span>
-    <h1>{{$ctrl.productName}}</h1>
+    <span class="glyphicon" ng-class="$ctrl.productIcon(product)"></span>
+    <h1>{{product.name}}</h1>
   </div>
   <div class="description">
-    {{$ctrl.productDescription}}
+    {{product.description}}
   </div>
   <ul>
-    <li ng-repeat="feature in $ctrl.productFeatures">{{feature}}</li>
+    <li ng-repeat="feature in product.features">{{feature}}</li>
   </ul>
 </div>

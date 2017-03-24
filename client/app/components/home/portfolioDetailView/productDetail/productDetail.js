@@ -1,9 +1,10 @@
 import angular from 'angular';
-import uiRouter from 'angular-ui-router';
 import productDetailComponent from './productDetail.component';
 
+// import ProductService from '../../../../services/productService/productService';
+
 let productDetailModule = angular.module('productDetail', [
-  uiRouter
+  // ProductService
 ])
 
 .component('productDetail', productDetailComponent)
