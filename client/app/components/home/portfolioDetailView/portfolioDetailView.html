@@ -16,7 +16,7 @@
     <div class="rating-count-list col-md-4">
       <div class="rating-count-line" ng-repeat="i in [1,2,3,4,5]">
         {{i}} <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-        <span class="rating-count" ng-class="{'rating-count-bar': $ctrl.votes[i-1] > 0}" ng-style="{width: (($ctrl.votes[i-1] / $ctrl.totalVotes()) * 100) + '%'}">
+        <span class="rating-count" ng-class="{'rating-count-bar': $ctrl.votes[i-1] > 0}" ng-style="{width: $ctrl.barWidth(i) + '%'}">
         {{$ctrl.votes[(i-1)]}}
       </span>
       </div>
