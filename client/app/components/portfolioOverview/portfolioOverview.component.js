@@ -4,7 +4,9 @@ import './portfolioOverview.scss';
 
 let portfolioOverviewComponent = {
   restrict: 'E',
-  bindings: {},
+  bindings: {
+
+  },
   template,
   controller
 };

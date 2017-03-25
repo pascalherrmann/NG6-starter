@@ -1,3 +1,211 @@
-<div>
+<!--<div>
   <h1>{{ $ctrl.name }}</h1>
+</div>-->
+
+
+
+<!--
+<br>
+<div class="container">
+    <div class="row">
+
+        <div ng-repeat="portfolio in portfolios">
+            <portfolio-panel portfolio="portfolio"></portfolio-panel>
+        </div>
+
+    </div>
 </div>
+-->
+<!-- deprecated
+<md-content class="md-padding" layout="row">
+    <span class="md-headline">Portfolios</span>
+</md-content>
+
+<md-content class="md-padding" layout-xs="column" layout="row">
+
+    <div ng-repeat="portfolio in portfolios">
+        <md-card md-theme="{{ showDarkTheme ? 'dark-grey' : 'default' }}" md-theme-watch>
+            <md-card-title>
+                <md-card-title-text>
+                    <span class="md-headline">{{portfolio.name}}</span>
+                    <span class="md-subhead">Large</span>
+                </md-card-title-text>
+                <md-card-title-media>
+                    <div class="md-media-lg card-media"></div>
+                </md-card-title-media>
+            </md-card-title>
+            <md-card-actions layout="row" layout-align="end center">
+                <md-button>Mehr Informationen</md-button>
+
+                <md-button class="md-fab" aria-label="Eat cake">
+            <md-icon md-svg-src="img/icons/cake.svg"></md-icon>
+        </md-button>
+
+            </md-card-actions>
+        </md-card>
+
+    </div>
+</md-content>
+
+<md-divider></md-divider>
+-->
+
+<!-- Header -->
+<header id="top" class="headerReal">
+    <div class="text-vertical-center">
+        <h1>Max Mustermakler</h1>
+        <h3>Versicherungsberatung</h3>
+        <br>
+        <a href="#about" class="btn btn-dark btn-lg">Find Out More</a>
+    </div>
+</header>
+
+<!-- About -->
+<section id="about" class="about-info white-background"><!-- nur about macht iwie rot... -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2>Stylish Portfolio is the perfect theme for your next project!</h2>
+                <p class="lead">This theme features some wonderful photography courtesy of <a target="_blank" href="http://join.deathtothestockphoto.com/">Death to the Stock Photo</a>.</p>
+            </div>
+        </div>
+        <!-- /.row -->
+    </div>
+    <!-- /.container -->
+</section>
+
+<!-- Services -->
+<!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
+<section id="services" class="services bg-primary">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-lg-10 col-lg-offset-1">
+                <h2>Our Services</h2>
+                <hr class="small">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="service-item">
+                            <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-cloud fa-stack-1x text-primary"></i>
+                            </span>
+                            <h4>
+                                    <strong>Einfach</strong>
+                                </h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            <a href="#" class="btn btn-light">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="service-item">
+                            <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-compass fa-stack-1x text-primary"></i>
+                            </span>
+                            <h4>
+                                    <strong>Service Name</strong>
+                                </h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            <a href="#" class="btn btn-light">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="service-item">
+                            <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-flask fa-stack-1x text-primary"></i>
+                            </span>
+                            <h4>
+                                    <strong>Präzise</strong>
+                                </h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            <a href="#" class="btn btn-light">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="service-item">
+                            <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-shield fa-stack-1x text-primary"></i>
+                            </span>
+                            <h4>
+                                    <strong>Komplett</strong>
+                                </h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            <a href="#" class="btn btn-light">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.row (nested) -->
+            </div>
+            <!-- /.col-lg-10 -->
+        </div>
+        <!-- /.row -->
+    </div>
+    <!-- /.container -->
+</section>
+
+<!-- Callout -->
+<aside class="callout">
+    <div class="text-vertical-center">
+        <h1>Beliebte Portfolios</h1>
+    </div>
+</aside>
+
+
+
+<!-- Call to Action -->
+<aside class="call-to-action bg-primary">
+    <div class="container">
+        <div class="row">
+            <div ng-repeat="portfolio in $ctrl.portfolios">
+            <portfolio-box portfolio="portfolio"></portfolio-box>
+            </div>
+        </div>
+    </div>
+</aside>
+
+<!-- Map -->
+<section id="contact" class="map">
+    <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Werk+1+München,+CA&amp;aq=0&amp;oq=twitter&amp;sll=48.1238228,11.6059726&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
+    <br />
+    <small>
+            <a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A"></a>
+        </small>
+</section>
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 col-lg-offset-1 text-center">
+                <h4><strong>Max Mustermakler</strong>
+                    </h4>
+                <p>Musterstraße 123
+                    <br>80331 München</p>
+                <ul class="list-unstyled">
+                    <li><i class="fa fa-phone fa-fw"></i> (123) 456-7890</li>
+                    <li><i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:mail@max-mustermakler.de">mail@max-mustermakler.de</a>
+                    </li>
+                </ul>
+                <br>
+                <ul class="list-inline">
+                    <li>
+                        <a href="#"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-dribbble fa-fw fa-3x"></i></a>
+                    </li>
+                </ul>
+                <hr class="small">
+                <p class="text-muted">Copyright &copy; Max Mustermakler 2017</p>
+            </div>
+        </div>
+    </div>
+    <a id="to-top" href="#top" class="btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
+</footer>
+
+

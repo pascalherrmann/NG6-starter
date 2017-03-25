@@ -3,10 +3,12 @@ import uiRouter from 'angular-ui-router';
 import homeComponent from './home.component';
 
 import portfolioDetailView from './portfolioDetailView/portfolioDetailView';
+import portfolioOverview from './../portfolioOverview/portfolioOverview';
 
 let homeModule = angular.module('home', [
   uiRouter,
-  portfolioDetailView
+  portfolioDetailView,
+    portfolioOverview
 ])
 
 .config(($stateProvider, $urlRouterProvider) => {
@@ -19,6 +21,12 @@ let homeModule = angular.module('home', [
       url: '/',
       component: 'home'
     })
+
+    .state('portfolioOverview', {
+      url: '/portfolioOverview',
+      component: 'portfolioOverview'
+    })
+
     .state('product', {
       url: '/product',
       component: 'portfolioDetailView'

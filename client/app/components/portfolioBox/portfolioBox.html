@@ -1,0 +1,52 @@
+<div class="col-md-4">
+
+    <div class="panel panel-default panel-transparent">
+
+        <!--<img class="card-img-top" src="..." alt="Card image cap">-->
+        <div class="panel-body">
+            <center>
+
+                <h4 class="card-title">{{$ctrl.portfolio.name}}</h4>
+
+                <!--
+                <span uib-rating ng-model="$ctrl.portfolio.stars" max=5 read-only=false on-hover="hoveringOver(value)" on-leave="overStar = null" titles="['one','two','three']" aria-labelledby="default-rating"></span>-->
+                <span ng-repeat="i in [1,2,3,4,5]" ng-class="i <= $ctrl.portfolio.stars ? 'glyphicon-star' : 'glyphicon-star-empty'" class="rating-star glyphicon" aria-hidden="true"></span>
+
+                <p>({{$ctrl.portfolio.ratings}} Bewertungen)</p>
+
+                <p class="card-text">{{$ctrl.portfolio.description}}</p><br>
+
+                <div class="row center-block">
+
+                    <div ng-class="{'col-sm-2': $ctrl.portfolio.products.length == 2,'col-sm-4': $ctrl.portfolio.products.length == 1}"></div>
+
+                    <div class="col-sm-4">
+                        <span class="logo glyphicon glyphicon-user white-color" ng-class="{'glyphicon glyphicon-globe':$ctrl.portfolio.products[0] == 'reisekranken'}"></span>
+                        <h4><small class="white-color">Berufs-Unfähigkeit</small></h4>
+                    </div>
+
+                    <div>
+                        <div class="col-sm-4" ng-show="$ctrl.portfolio.products.length >= 2">
+                            <span class="glyphicon glyphicon-home logo white-color"></span>
+                            <h4><small class="white-color">Hausrat Versicherung</small></h4>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4" ng-show="$ctrl.portfolio.products.length == 3">
+                        <span class="logo glyphicon glyphicon-globe white-color"></span>
+                        <h4><small class="white-color">Reisekranken Versicherung</small></h4>
+                    </div>
+
+                    <div class="col-sm-4" ng-show="$ctrl.portfolio.products.length > 3">
+                        <span class="fakeGlyphicon logo white-color">+{{$ctrl.portfolio.products.length-2}}</span>
+                        <h4><small class="white-color">Weitere Produkte</small></h4>
+                    </div>
+
+                </div><br>
+
+                <a href="#/detailView/{{portfolio.id}}" class="btn btn-light">Mehr Informationen</a>
+
+            </center>
+        </div>
+    </div>
+</div>
