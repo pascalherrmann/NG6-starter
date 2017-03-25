@@ -160,6 +160,11 @@
 <!-- Call to Action -->
 <aside class="call-to-action bg-primary">
     <div class="container" ng-if="$ctrl.portfolios">
+        <center>
+            <h1>Watsons persönliche Empfehlungen für Dich:</h1></center>
+
+<br>
+
         <div class="row">
             <div ng-repeat="portfolio in $ctrl.portfolios">
                 <portfolio-box portfolio="portfolio"></portfolio-box>
@@ -170,7 +175,6 @@
     <div ng-if="!$ctrl.portfolios">
         <center>
             <h1>Lass' Watson Deinen Versicherungsbedarf analysieren!</h1></center>
-
 
         <div class="row">
             <div class="col-md-3">

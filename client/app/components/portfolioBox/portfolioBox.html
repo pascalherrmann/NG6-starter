@@ -10,7 +10,7 @@
 
                 <!--
                 <span uib-rating ng-model="$ctrl.portfolio.stars" max=5 read-only=false on-hover="hoveringOver(value)" on-leave="overStar = null" titles="['one','two','three']" aria-labelledby="default-rating"></span>-->
-                <span ng-repeat="i in [1,2,3,4,5]" ng-class="i <= $ctrl.portfolio.stars ? 'glyphicon-star' : 'glyphicon-star-empty'" class="rating-star glyphicon" aria-hidden="true"></span>
+                <span ng-repeat="i in [1,2,3,4,5]" ng-class="i <= $ctrl.portfolio.stars ? 'glyphicon-star' : 'glyphicon-star-empty'" class="rating-star glyphicon second-color" aria-hidden="true"></span>
 
                 <p>({{$ctrl.portfolio.ratings}} Bewertungen)</p>
 
@@ -27,13 +27,13 @@
 
                     <div>
                         <div class="col-sm-4" ng-show="$ctrl.portfolio.products.length >= 2">
-                            <span class="glyphicon glyphicon-home logo white-color"></span>
+                            <span class="glyphicon glyphicon-home logo white-color" ng-class="{'glyphicon glyphicon-globe':$ctrl.portfolio.products[1] == 'reisekranken', 'glyphicon glyphicon-user':$ctrl.portfolio.products[1] == 'leben', 'glyphicon glyphicon-house':$ctrl.portfolio.products[1] == 'hausrate'}"></span>
                             <h4><small class="white-color">Hausrat Versicherung</small></h4>
                         </div>
                     </div>
 
                     <div class="col-sm-4" ng-show="$ctrl.portfolio.products.length == 3">
-                        <span class="logo glyphicon glyphicon-globe white-color"></span>
+                        <span class="logo glyphicon glyphicon-globe white-color" ng-class="{'glyphicon glyphicon-globe':$ctrl.portfolio.products[2] == 'reisekranken', 'glyphicon glyphicon-user':$ctrl.portfolio.products[2] == 'leben', 'glyphicon glyphicon-house':$ctrl.portfolio.products[2] == 'hausrate'}"></span>
                         <h4><small class="white-color">Reisekranken Versicherung</small></h4>
                     </div>
 

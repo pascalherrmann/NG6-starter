@@ -23,7 +23,7 @@ class PortfolioOverviewController {
                 description: "Die perfekte Versicherung für junge Leute die alles brauchen.",
                 ratings: 48,
                 products: ["leben", "hausrat", "reisekranken", "test"]
-            }, ]
+            }]
 
         this.test = {
             name: '',
@@ -35,8 +35,8 @@ class PortfolioOverviewController {
 
         portfolios.listByTwitterUsername(this.twitterUsername).then(
             response => console.log(response),
-            //response => this.portfolios = response.data;
-            response => this.portfolios = serviceMock,
+            response => this.portfolios = response.data;
+            //response => this.portfolios = serviceMock,
             error => console.log(error)
         );
 
