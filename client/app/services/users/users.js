@@ -1,9 +1,9 @@
 import angular from 'angular';
 
-import Ratings from './ratings.factory';
+import Users from './users.factory';
 
-let ratingServiceModule = angular.module('ratings', [])
-  .factory('ratings', ['$http', Ratings])
+let ratingServiceModule = angular.module('users', [])
+  .factory('users', ['$http', Users])
   .name;
 
 export default ratingServiceModule;

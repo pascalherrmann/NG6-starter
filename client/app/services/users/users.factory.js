@@ -1,11 +1,11 @@
-const RatingsFactory = ($http) => {
+const UsersFactory = ($http) => {
   return {
-    list: () => {
-      return $http.get('/ratings');
+    get: (id) => {
+      return $http.get(`/ratings/${id}`);
     }
   }
 };
 
-RatingsFactory.$inject = '$scope';
+UsersFactory.$inject = '$scope';
 
-export default RatingsFactory;
+export default UsersFactory;
