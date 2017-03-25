@@ -12,7 +12,7 @@
                 <span uib-rating ng-model="$ctrl.portfolio.stars" max=5 read-only=false on-hover="hoveringOver(value)" on-leave="overStar = null" titles="['one','two','three']" aria-labelledby="default-rating"></span>-->
                 <span ng-repeat="i in [1,2,3,4,5]" ng-class="i <= $ctrl.portfolio.stars ? 'glyphicon-star' : 'glyphicon-star-empty'" class="rating-star glyphicon second-color" aria-hidden="true"></span>
 
-                <p>({{$ctrl.portfolio.ratings}} Bewertungen)</p>
+                <p>({{$ctrl.portfolio.ratings.length}} Ratings)</p>
 
                 <p class="card-text">{{$ctrl.portfolio.description}}</p><br>
 
