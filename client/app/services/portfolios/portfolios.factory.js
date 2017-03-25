@@ -1,6 +1,6 @@
 const PortfoliosFactory = ($http) => {
   return {
-    list: () => $http.get('/portfolios'),
+    list: () => $http.get('/portfolios'), //'http://portfolio-service.mybluemix.net/portfolios'
     get: (id) => $http.get(`/portfolios/${id}`)
   }
 };
