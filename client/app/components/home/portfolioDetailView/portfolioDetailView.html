@@ -1,16 +1,13 @@
-<div class="home">
-  <div class="row">
-    <div class="col-md-2"></div>
-    <div class="col-md-8">
+<div class="container">
+  <div class="container row">
+    <div class="jumbotron">
       <h1>{{$ctrl.portfolio.name}}</h1>
-      <div>{{$ctrl.portfolio.description}}</div>
-      <product-detail></product-detail>
+      <p>{{$ctrl.portfolio.description}}</p>
     </div>
-    <div class="col-md-2"></div>
+    <product-detail></product-detail>
   </div>
-  <div class="rating-view .debug-border">
+  <div class="rating-view">
     <div class="row">
-      <div class="col-md-3"></div>
       <div class="rating-total col-md-2">
         <div class="rating-total-header">{{$ctrl.totalScore()}}</div>
         <div class="rating-total-stars">
@@ -31,7 +28,6 @@
       </span>
         </div>
       </div>
-      <div class="col-md-3"></div>
     </div>
   </div>
   <rating-comment></rating-comment>
