@@ -18,7 +18,7 @@ class PortfolioDetailViewController {
       error => console.log(error)
     );
     portfolios.get($stateParams.id).then(
-      response => this.portfolio = response.data[0],
+      response => this.portfolio = response.data,
       error => console.log(error)
     );
     this.votes = [0, 2, 3, 17, 29];
