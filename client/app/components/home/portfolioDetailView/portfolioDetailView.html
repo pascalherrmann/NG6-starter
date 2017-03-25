@@ -30,5 +30,7 @@
       </div>
     </div>
   </div>
-  <rating-comment></rating-comment>
+  <div ng-repeat="rating in $ctrl.ratings">
+    <rating-comment rating="rating"></rating-comment>
+  </div>
 </div>

@@ -5,7 +5,9 @@ import './ratingComment.scss';
 
 let ratingCommentComponent = {
   restrict: 'E',
-  bindings: {},
+  bindings: {
+    rating: '<'
+  },
   template,
   controller
 };

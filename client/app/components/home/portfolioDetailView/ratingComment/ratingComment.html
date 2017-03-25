@@ -1,14 +1,14 @@
-<div ng-repeat="rating in $ctrl.ratings" class="rating-comments">
+<div class="rating-comments">
   <div class="rating-comment">
     <div class="rating-comment-header">
-      <h3>User #{{rating.userId}}: {{rating.commentTitle}}</h3>
+      <h3>User #{{$ctrl.rating.userId}}: {{$ctrl.rating.commentTitle}}</h3>
       <span ng-repeat="i in [1,2,3,4,5]"
-            ng-class="i <= rating.numberOfStars ? 'glyphicon-star' : 'glyphicon-star-empty'"
+            ng-class="i <= $ctrl.rating.numberOfStars ? 'glyphicon-star' : 'glyphicon-star-empty'"
             class="rating-star glyphicon"
             aria-hidden="true"></span>
     </div>
     <div class="rating-comment-text">
-      {{rating.comment}}
+      {{$ctrl.rating.comment}}
     </div>
   </div>
 </div>
