@@ -53,8 +53,8 @@
 <!-- Header -->
 <header id="top" class="headerReal" style="width: 100%;height:100vh;">
     <div class="text-vertical-center">
-        <h1>Max Mustermakler</h1>
-        <h3>Versicherungsberatung</h3>
+        <h1>Portfolio Matcher</h1>
+        <h3>Let Watson<sup>&reg;</sup> analyze your Insurance Needs!</h3>
         <br>
         <a href="#about" class="btn btn-dark btn-lg">Find Out More</a>
     </div>
@@ -75,83 +75,14 @@
     <!-- /.container -->
 </section>
 
-<!-- Services -->
-<!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
-<section id="services" class="services bg-primary">
-    <div class="container">
-        <div class="row text-center">
-            <div class="col-lg-10 col-lg-offset-1">
-                <h2>Our Services</h2>
-                <hr class="small">
-                <div class="row">
-                    <div class="col-md-3 col-sm-6">
-                        <div class="service-item">
-                            <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-cloud fa-stack-1x text-primary"></i>
-                            </span>
-                            <h4>
-                                    <strong>Einfach</strong>
-                                </h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                            <a href="#" class="btn btn-light">Learn More</a>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6">
-                        <div class="service-item">
-                            <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-compass fa-stack-1x text-primary"></i>
-                            </span>
-                            <h4>
-                                    <strong>Service Name</strong>
-                                </h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                            <a href="#" class="btn btn-light">Learn More</a>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6">
-                        <div class="service-item">
-                            <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-flask fa-stack-1x text-primary"></i>
-                            </span>
-                            <h4>
-                                    <strong>Präzise</strong>
-                                </h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                            <a href="#" class="btn btn-light">Learn More</a>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6">
-                        <div class="service-item">
-                            <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-shield fa-stack-1x text-primary"></i>
-                            </span>
-                            <h4>
-                                    <strong>Komplett</strong>
-                                </h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                            <a href="#" class="btn btn-light">Learn More</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- /.row (nested) -->
-            </div>
-            <!-- /.col-lg-10 -->
-        </div>
-        <!-- /.row -->
-    </div>
-    <!-- /.container -->
 
 
-</section>
+
 
 <!-- Callout -->
 <aside class="callout">
     <div class="text-vertical-center">
-        <h1>Beliebte Portfolios</h1>
+        <h1>Watson<sup>&reg;</sup> Portfolio Analyzer</h1>
     </div>
 </aside>
 
@@ -161,7 +92,7 @@
 <aside class="call-to-action bg-primary">
     <div class="container" ng-if="$ctrl.portfolios">
         <center>
-            <h1>Watsons persönliche Empfehlungen für Dich:</h1></center>
+            <h1>Watsons<sup>&reg;</sup> persönliche Empfehlungen für Dich:</h1></center>
 
         <br>
 
@@ -174,7 +105,7 @@
 
     <div ng-if="!$ctrl.portfolios">
         <center>
-            <h1>Lass' Watson Deinen Versicherungsbedarf analysieren!</h1></center>
+            <h1>Let IBM Watson<sup>&reg;</sup> analyze your insurance needs!</h1></center>
 
         <div class="row">
             <div class="col-md-3">
@@ -182,9 +113,9 @@
             <div class="col-md-6">
                 <form ng-show="!$ctrl.loading">
                     <div class="input-group input-group-lg">
-                        <input class="form-control input-lg centered-input" type="text" placeholder="Wie lautet Dein Twitter-Username?" ng-model="$ctrl.twitterUsername">
+                        <input class="form-control input-lg centered-input" type="text" placeholder="What is your Twitter username?" ng-model="$ctrl.twitterUsername">
                         <div class="input-group-btn">
-                            <button class="btn btn-warning" type="submit" ng-click="$ctrl.analyze()"><!--<i class="glyphicon glyphicon-search"></i>-->  Berechnen!</button>
+                            <button class="btn btn-warning" type="submit" ng-click="$ctrl.analyze()"><!--<i class="glyphicon glyphicon-search"></i>-->  Calculate!</button>
                         </div>
                     </div>
                 </form>
@@ -207,13 +138,72 @@
             <div class="col-md-6">
                 <div ng-if="$ctrl.error">
                     <center>
-                        <h2>Error!</h2>
+                        <h2>Error.</h2>
                         <h3>Unfortunately, something went wrong. Please try again!</h3></center>
                 </div>
             </div>
 
 
         </div>
+
+
+
+
+
+
+
+
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-lg-8 col-lg-offset-2"><br><br>
+                <div class="row">
+                    <div class="col-md-4 col-sm-6">
+                        <div class="service-item">
+                            <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-cloud fa-stack-1x text-primary"></i>
+                            </span>
+                            <h4>
+                                    <strong>Simple</strong>
+                                </h4>
+                            <p>No need to fill out any forms. We will analyze your tweets and find matching insurance portfolios.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="service-item">
+                            <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-flask fa-stack-1x text-primary"></i>
+                            </span>
+                            <h4>
+                                    <strong>Accurate</strong>
+                                </h4>
+                            <p>We use IBM Watson to determine the best insurance portfolios for you based on your public twitter activities.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="service-item">
+                            <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-shield fa-stack-1x text-primary"></i>
+                            </span>
+                            <h4>
+                                    <strong>Complete</strong>
+                                </h4>
+                            <p>Don't worry about any forgetting an important insurance.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.row (nested) -->
+            </div>
+            <!-- /.col-lg-10 -->
+        </div>
+        <!-- /.row -->
+    </div>
+    <!-- /.container -->
+
+
+
 
 
 
@@ -241,13 +231,13 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-10 col-lg-offset-1 text-center">
-                <h4><strong>Max Mustermakler</strong>
+                <h4><strong>Portfolio Matcher</strong>
                     </h4>
                 <p>Musterstraße 123
-                    <br>80331 München</p>
+                    <br>80331 Munich</p>
                 <ul class="list-unstyled">
-                    <li><i class="fa fa-phone fa-fw"></i> (123) 456-7890</li>
-                    <li><i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:mail@max-mustermakler.de">mail@max-mustermakler.de</a>
+                    <li><i class="fa fa-phone fa-fw"></i> +49 123 456-7890</li>
+                    <li><i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:mail@portfolio-matcher.com">mail@portfolio-matcher.com</a>
                     </li>
                 </ul>
                 <br>
@@ -263,7 +253,7 @@
                     </li>
                 </ul>
                 <hr class="small">
-                <p class="text-muted">Copyright &copy; Max Mustermakler 2017</p>
+                <p class="text-muted">Copyright &copy; Portfolio Matcher 2017</p>
             </div>
         </div>
     </div>
