@@ -21,7 +21,7 @@
                     <div ng-class="{'col-sm-2': $ctrl.portfolio.products.length == 2,'col-sm-4': $ctrl.portfolio.products.length == 1}"></div>
 
                     <div class="col-sm-4">
-                        <span class="logo glyphicon glyphicon-user white-color" ng-class="{'glyphicon glyphicon-globe':$ctrl.portfolio.products[0] == 'reisekranken'}"></span>
+                        <span class="logo glyphicon glyphicon-envelope white-color" ng-class="{'glyphicon glyphicon-globe':$ctrl.portfolio.products[0] == 'reisekranken', 'glyphicon glyphicon-user':$ctrl.portfolio.products[0] == 'leben', 'glyphicon glyphicon-house':$ctrl.portfolio.products[0] == 'hausrate'}"></span>
                         <h4><small class="white-color">Berufs-Unfähigkeit</small></h4>
                     </div>
 
@@ -44,7 +44,7 @@
 
                 </div><br>
 
-                <a href="#/detailView/{{portfolio.id}}" class="btn btn-light">Mehr Informationen</a>
+                <a href="/portfolio/444" class="btn btn-light">Mehr Informationen</a>
 
             </center>
         </div>

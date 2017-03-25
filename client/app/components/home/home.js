@@ -26,7 +26,7 @@ let homeModule = angular.module('home', [
       component: 'portfolioOverview'
     })
     .state('portfolio', {
-      url: '/portfolio',
+      url: '/portfolio/:id',
       component: 'portfolioDetailView'
     });
 })
