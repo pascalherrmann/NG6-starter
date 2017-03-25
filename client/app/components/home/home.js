@@ -18,11 +18,11 @@ let homeModule = angular.module('home', [
 
     $stateProvider
       .state('home', {
-        url: '/',
+        url: '/home',
         component: 'home'
       })
       .state('portfolioOverview', {
-        url: '/portfolioOverview',
+        url: '/',
         component: 'portfolioOverview'
       })
       .state('portfolio', {
