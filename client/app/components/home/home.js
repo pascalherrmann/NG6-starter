@@ -8,31 +8,31 @@ import portfolioOverview from './../portfolioOverview/portfolioOverview';
 let homeModule = angular.module('home', [
   uiRouter,
   portfolioDetailView,
-    portfolioOverview
+  portfolioOverview
 ])
 
-.config(($stateProvider, $urlRouterProvider) => {
-  "ngInject";
+  .config(($stateProvider, $urlRouterProvider) => {
+    "ngInject";
 
-  $urlRouterProvider.otherwise('/');
+    $urlRouterProvider.otherwise('/');
 
-  $stateProvider
-    .state('home', {
-      url: '/',
-      component: 'home'
-    })
-    .state('portfolioOverview', {
-      url: '/portfolioOverview',
-      component: 'portfolioOverview'
-    })
-    .state('portfolio', {
-      url: '/portfolio/:id',
-      component: 'portfolioDetailView'
-    });
-})
+    $stateProvider
+      .state('home', {
+        url: '/',
+        component: 'home'
+      })
+      .state('portfolioOverview', {
+        url: '/portfolioOverview',
+        component: 'portfolioOverview'
+      })
+      .state('portfolio', {
+        url: '/portfolio/:id',
+        component: 'portfolioDetailView'
+      });
+  })
 
-.component('home', homeComponent)
+  .component('home', homeComponent)
 
-.name;
+  .name;
 
 export default homeModule;
