@@ -17,8 +17,8 @@ class PortfolioOverviewController {
                 response => {
                     this.loading = false
                     this.error = null
-                    this.portfolios = response.data._embedded.portfolios
-                    console.log(response.data._embedded.portfolios)
+                    this.portfolios = response.data
+                    console.log(response.data)
 
                 },
                 error => {
