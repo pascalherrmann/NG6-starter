@@ -2,14 +2,14 @@
   <div class="col-md-2"></div>
   <div class="rating-comment col-md-8">
     <div class="rating-comment-header">
-      <h3>{{rating.user}}</h3>
+      <h3>User #{{rating.userId}}: {{rating.commentTitle}}</h3>
       <span ng-repeat="i in [1,2,3,4,5]"
-            ng-class="i <= rating.score ? 'glyphicon-star' : 'glyphicon-star-empty'"
+            ng-class="i <= rating.numberOfStars ? 'glyphicon-star' : 'glyphicon-star-empty'"
             class="rating-star glyphicon"
             aria-hidden="true"></span>
     </div>
     <div class="rating-comment-text">
-      {{rating.text}}
+      {{rating.comment}}
     </div>
   </div>
   <div class="col-md-2"></div>
