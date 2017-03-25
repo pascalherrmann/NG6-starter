@@ -83,7 +83,7 @@ gulp.task('serve', () => {
     server: {baseDir: root},
     middleware: [
       historyApiFallback(),
-      proxyMiddleware('/portfolios', {target: 'http://localhost:8080'}),
+      proxyMiddleware(['/ratings','/portfolios'], {target: 'http://localhost:8080'}),
       webpackDevMiddleware(compiler, {
         stats: {
           colors: colorsSupported,
