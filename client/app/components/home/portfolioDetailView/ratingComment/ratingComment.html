@@ -1,6 +1,5 @@
-<div ng-repeat="rating in $ctrl.ratings" class="rating-comments row debug-border">
-  <div class="col-md-2"></div>
-  <div class="rating-comment col-md-8">
+<div ng-repeat="rating in $ctrl.ratings" class="rating-comments">
+  <div class="rating-comment">
     <div class="rating-comment-header">
       <h3>User #{{rating.userId}}: {{rating.commentTitle}}</h3>
       <span ng-repeat="i in [1,2,3,4,5]"
@@ -12,5 +11,4 @@
       {{rating.comment}}
     </div>
   </div>
-  <div class="col-md-2"></div>
 </div>
