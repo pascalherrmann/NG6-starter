@@ -35,7 +35,7 @@ class PortfolioOverviewController {
 
         portfolios.listByTwitterUsername(this.twitterUsername).then(
             response => console.log(response),
-            response => this.portfolios = response.data;
+            response => this.portfolios = response.data,
             //response => this.portfolios = serviceMock,
             error => console.log(error)
         );
