@@ -4,7 +4,9 @@ import './productDetail.scss';
 
 let productDetailComponent = {
   restrict: 'E',
-  bindings: {},
+  bindings: {
+    product: '<'
+  },
   template,
   controller
 };

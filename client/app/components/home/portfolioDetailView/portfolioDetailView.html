@@ -4,7 +4,9 @@
       <h1>{{$ctrl.portfolio.name}}</h1>
       <p>{{$ctrl.portfolio.description}}</p>
     </div>
-    <product-detail></product-detail>
+    <div ng-repeat="product in $ctrl.portfolio.products">
+      <product-detail product="product"></product-detail>
+    </div>
   </div>
   <div class="rating-view">
     <div class="row">

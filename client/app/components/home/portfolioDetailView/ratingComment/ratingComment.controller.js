@@ -1,8 +1,8 @@
 class RatingCommentController {
-  constructor() {
+  constructor(users) {
   }
 }
 
-RatingCommentController.$inject = [''];
+RatingCommentController.$inject = ['users'];
 
 export default RatingCommentController;
