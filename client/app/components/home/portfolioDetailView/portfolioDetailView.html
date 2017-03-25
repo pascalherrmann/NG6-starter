@@ -33,6 +33,6 @@
     </div>
   </div>
   <div ng-repeat="rating in $ctrl.ratings">
-    <rating-comment rating="rating"></rating-comment>
+    <rating-comment ng-if="rating.commentTitle" rating="rating"></rating-comment>
   </div>
 </div>

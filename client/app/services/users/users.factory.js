@@ -1,7 +1,7 @@
 const UsersFactory = ($http) => {
   return {
     get: (id) => {
-      return $http.get(`/ratings/${id}`);
+      return $http.get(`/users/${id}`);
     }
   }
 };
