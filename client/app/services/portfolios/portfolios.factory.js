@@ -1,7 +1,8 @@
 const PortfoliosFactory = ($http) => {
   return {
     list: () => $http.get('/portfolios'), //'http://portfolio-service.mybluemix.net/portfolios'
-    get: (id) => $http.get(`/portfolios/${id}`)
+    listByTwitterUsername: (twitterUsername) => $http.get('/portfolios/'+twitterUsername), //'http://portfolio-service.mybluemix.net/portfolios'
+    get: (id) => $http.get('/portfolios/'+id)
   }
 };
 
