@@ -22,29 +22,29 @@
 
                     <div class="col-sm-4">
                         <span class="logo glyphicon glyphicon-envelope white-color" ng-class="{'glyphicon glyphicon-globe':$ctrl.portfolio.products[0] == 'reisekranken', 'glyphicon glyphicon-user':$ctrl.portfolio.products[0] == 'leben', 'glyphicon glyphicon-house':$ctrl.portfolio.products[0] == 'hausrate'}"></span>
-                        <h4><small class="white-color">Berufs-Unfähigkeit</small></h4>
+                        <h4><small class="white-color">Life Inrusance</small></h4>
                     </div>
 
                     <div>
                         <div class="col-sm-4" ng-show="$ctrl.portfolio.products.length >= 2">
                             <span class="glyphicon glyphicon-home logo white-color" ng-class="{'glyphicon glyphicon-globe':$ctrl.portfolio.products[1] == 'reisekranken', 'glyphicon glyphicon-user':$ctrl.portfolio.products[1] == 'leben', 'glyphicon glyphicon-house':$ctrl.portfolio.products[1] == 'hausrate'}"></span>
-                            <h4><small class="white-color">Hausrat Versicherung</small></h4>
+                            <h4><small class="white-color">Home Insurance</small></h4>
                         </div>
                     </div>
 
                     <div class="col-sm-4" ng-show="$ctrl.portfolio.products.length == 3">
                         <span class="logo glyphicon glyphicon-globe white-color" ng-class="{'glyphicon glyphicon-globe':$ctrl.portfolio.products[2] == 'reisekranken', 'glyphicon glyphicon-user':$ctrl.portfolio.products[2] == 'leben', 'glyphicon glyphicon-house':$ctrl.portfolio.products[2] == 'hausrate'}"></span>
-                        <h4><small class="white-color">Reisekranken Versicherung</small></h4>
+                        <h4><small class="white-color">Health Insurance</small></h4>
                     </div>
 
                     <div class="col-sm-4" ng-show="$ctrl.portfolio.products.length > 3">
                         <span class="fakeGlyphicon logo white-color">+{{$ctrl.portfolio.products.length-2}}</span>
-                        <h4><small class="white-color">Weitere Produkte</small></h4>
+                        <h4><small class="white-color">Further Products</small></h4>
                     </div>
 
                 </div><br>
 
-                <a href="#/portfolio/{{$ctrl.portfolio.id}}" class="btn btn-light">Mehr Informationen</a>
+                <a href="#/portfolio/{{$ctrl.portfolio.id}}" class="btn btn-light">More Information</a>
 
             </center>
         </div>

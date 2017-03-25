@@ -26,7 +26,7 @@ class PortfolioOverviewController {
                     this.error = error
                     console.log("ERROR!")
                     console.log(error)
-                    //this.portfolios = serviceMock
+                    this.portfolios = serviceMock
                 }
             );
 
