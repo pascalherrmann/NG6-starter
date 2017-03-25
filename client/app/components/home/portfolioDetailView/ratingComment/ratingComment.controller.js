@@ -3,4 +3,6 @@ class RatingCommentController {
   }
 }
 
+RatingCommentController.$inject = [''];
+
 export default RatingCommentController;
