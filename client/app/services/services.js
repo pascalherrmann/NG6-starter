@@ -1,6 +1,6 @@
 import angular from 'angular';
 
-import Products from './productService/productService';
+import Products from './products/products';
 
 let servicesModule = angular.module('app.services', [
   Products

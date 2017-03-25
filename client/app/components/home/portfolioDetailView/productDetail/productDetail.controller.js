@@ -3,8 +3,8 @@ const iconMapping = {
 };
 
 class ProductDetailController {
-  constructor(productService) {
-    this.products = productService.getProducts();
+  constructor(products) {
+    this.products = products.getProducts();
     this.productIcon = (product) => {
       let icon = iconMapping[product.type]
       return icon ? icon : 'glyphicon-ok-sign';
@@ -12,6 +12,6 @@ class ProductDetailController {
   }
 }
 
-ProductDetailController.$inject = ['productService'];
+ProductDetailController.$inject = ['products'];
 
 export default ProductDetailController;

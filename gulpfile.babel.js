@@ -12,6 +12,7 @@ import lodash   from 'lodash';
 import gutil    from 'gulp-util';
 import serve    from 'browser-sync';
 import del      from 'del';
+import proxyMiddleware from 'http-proxy-middleware';
 import webpackDevMiddleware from 'webpack-dev-middleware';
 import webpackHotMiddleware from 'webpack-hot-middleware';
 import colorsSupported      from 'supports-color';
@@ -51,7 +52,7 @@ gulp.task('webpack', ['clean'], (cb) => {
   config.entry.app = paths.entry;
 
   webpack(config, (err, stats) => {
-    if(err)  {
+    if (err) {
       throw new gutil.PluginError("webpack", err);
     }
 
@@ -82,6 +83,7 @@ gulp.task('serve', () => {
     server: {baseDir: root},
     middleware: [
       historyApiFallback(),
+      proxyMiddleware('/portfolios', {target: 'http://localhost:8080'}),
       webpackDevMiddleware(compiler, {
         stats: {
           colors: colorsSupported,
